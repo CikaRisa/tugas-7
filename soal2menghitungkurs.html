@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function hitung(){
+                const dollar = 14.650;// konstanta
+                let rupiah = document.getElementById("bil1").value;
+                console.log("rupiah : " + rupiah);
+                let konversi = 14.650 * rupiah;
+                console.log("nilai : " + nilai);
+                let area_hasil = document.getElementById("nilai");
+                area_hasil.innerHTML = "nilai : " + nilai; 
+            }
+        </script>
+
+    </head>
+    <body>
+        <h3>Konversi Dollar ke Rupiah</h3>
+        Konversi Dollar Ke Rupiah :
+        <input type="number" value="" size="10" id="bil1"/>
+        <br/>
+        <button onclick="hitung()">Hitung</button>
+        <br/>Hasil : <span id="hasil"></span>
+    </body>
+</html>
